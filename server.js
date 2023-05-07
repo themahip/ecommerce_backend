@@ -64,6 +64,12 @@ if (process.env.NODE_ENV === 'production') {
   });
 }
 
+app.get("/",(req,res)=>{
+  res.json({
+    success:true
+  })
+})
+
 const PORT = process.env.PORT || 1000;
 
 app.listen(PORT, () => {
