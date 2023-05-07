@@ -54,12 +54,12 @@ app.use('/api', productRoutes);
 // app.use('/api', braintreeRoutes);
 app.use('/api', orderRoutes);
 
-// Server static assets if in production
-if (process.env.NODE_ENV === 'production') {
-  // Set static folder
-  app.use(express.static('client/build'));
+// // Server static assets if in production
+// if (process.env.NODE_ENV === 'production') {
+//   // Set static folder
+//   app.use(express.static('client/build'));
 
-}
+// }
 
 app.get("/",(req,res)=>{
   res.json({
